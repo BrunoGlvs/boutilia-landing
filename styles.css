@@ -324,6 +324,21 @@ nav {
     opacity: 1;
 }
 
+.powered-by {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.powered-by svg {
+    color: var(--accent);
+}
+
 /* ============ DASHBOARD MOCKUP ============ */
 .dashboard-mockup {
     background: white;
@@ -473,21 +488,8 @@ nav {
     color: var(--text-muted);
     font-size: 0.95rem;
     margin: 48px 0 32px;
-    position: relative;
+    font-style: italic;
 }
-
-.demo-divider::before,
-.demo-divider::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    width: 80px;
-    height: 1px;
-    background: var(--border);
-}
-
-.demo-divider::before { left: calc(50% - 240px); }
-.demo-divider::after { right: calc(50% - 240px); }
 
 /* ============ ROI ============ */
 .roi {
@@ -495,60 +497,74 @@ nav {
     background: var(--bg-soft);
 }
 
-.roi-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    flex-wrap: wrap;
-    max-width: 900px;
-    margin: 0 auto 56px;
+/* Bénéfices clés (4 cards) */
+.roi-benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    max-width: 1120px;
+    margin: 0 auto 80px;
 }
 
-.roi-card {
+.benefit {
     background: white;
     border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
-    padding: 32px 36px;
-    text-align: center;
-    min-width: 240px;
+    border-radius: var(--radius);
+    padding: 28px 24px;
+    transition: all 0.2s;
 }
 
-.roi-card.highlight {
-    border-color: var(--accent);
-    border-width: 2px;
-    box-shadow: 0 12px 32px rgba(0, 179, 131, 0.12);
+.benefit:hover {
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
 }
 
-.roi-figure {
-    font-size: 2.4rem;
-    font-weight: 800;
-    color: var(--text);
-    letter-spacing: -0.03em;
-    margin-bottom: 8px;
-}
-
-.roi-card.highlight .roi-figure {
+.benefit-icon {
+    width: 44px;
+    height: 44px;
+    background: var(--accent-soft);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--accent);
+    margin-bottom: 20px;
 }
 
-.roi-label {
+.benefit h3 {
+    color: var(--text);
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.benefit p {
     color: var(--text-muted);
-    font-size: 0.92rem;
-    max-width: 220px;
-    line-height: 1.4;
+    font-size: 0.93rem;
+    line-height: 1.55;
 }
 
-.roi-arrow {
-    color: var(--text-muted);
-    flex-shrink: 0;
+/* Sous-titre cas d'usage */
+.roi-examples-head {
+    text-align: center;
+    margin-bottom: 36px;
 }
 
+.roi-examples-head h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+}
+
+/* Cas d'usage (6 cards) */
 .roi-examples {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
-    max-width: 1000px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 18px;
+    max-width: 1120px;
     margin: 0 auto;
 }
 
@@ -556,27 +572,47 @@ nav {
     background: white;
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 24px;
+    padding: 26px 24px;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.roi-example:hover {
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow-md);
+}
+
+.roi-example-num {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+    background: var(--accent-soft);
+    padding: 4px 8px;
+    border-radius: 6px;
 }
 
 .roi-example-title {
     color: var(--text);
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.02rem;
     margin-bottom: 10px;
+    padding-right: 50px;
+    line-height: 1.3;
 }
 
 .roi-example p {
-    font-size: 0.92rem;
+    font-size: 0.93rem;
     line-height: 1.55;
+    color: var(--text-muted);
 }
 
-.roi-note {
-    text-align: center;
-    color: var(--text-muted);
-    font-size: 0.82rem;
-    font-style: italic;
-    margin-top: 36px;
+@media (max-width: 768px) {
+    .roi-benefits { margin-bottom: 56px; }
+    .roi-examples-head h3 { font-size: 1.2rem; }
 }
 
 /* ============ SECURITY ============ */
@@ -971,6 +1007,247 @@ nav {
 
 .plan-features li svg { flex-shrink: 0; margin-top: 4px; }
 
+/* ============ PRICING TABLE (style compact) ============ */
+.pricing-table-wrapper {
+    margin-top: 96px;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricing-table-head {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.pricing-table-head h3 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--text);
+    letter-spacing: -0.02em;
+}
+
+.pricing-table-head p {
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+.pricing-table-scroll {
+    overflow-x: auto;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    min-width: 760px;
+}
+
+.pricing-table th,
+.pricing-table td {
+    padding: 18px 20px;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+/* HEADER */
+.pricing-table thead th {
+    background: transparent;
+    color: var(--text);
+    font-weight: 700;
+    padding: 28px 16px 24px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    position: relative;
+}
+
+.pricing-table thead th.th-feature {
+    text-align: left;
+    color: var(--text);
+    font-weight: 700;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.pricing-table thead th.th-highlight {
+    background: var(--accent-soft);
+    border-radius: 14px 14px 0 0;
+    padding-top: 36px;
+    border-bottom: 1px solid var(--accent-soft);
+}
+
+.th-plan {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    letter-spacing: -0.02em;
+    color: var(--text);
+}
+
+.th-price {
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.th-badge {
+    display: inline-block;
+    margin-top: 10px;
+    background: var(--accent);
+    color: white;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 999px;
+    letter-spacing: 0.02em;
+}
+
+/* TBODY */
+.pricing-table tbody td {
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+}
+
+.pricing-table tbody td:first-child {
+    text-align: left;
+    color: var(--text);
+    font-weight: 500;
+}
+
+/* Catégorie : juste typo, pas de fond brutal */
+.pricing-table tbody tr.row-category td {
+    background: transparent;
+    color: var(--text-muted);
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    padding: 36px 20px 14px;
+    border-bottom: 1px solid var(--border);
+}
+
+/* CHECK : cercle vert avec ✓ blanc */
+.check {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background: var(--accent);
+    border-radius: 50%;
+    line-height: 0;
+}
+
+/* CROSS : cercle gris clair vide */
+.cross {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: transparent;
+    border: 1.5px solid var(--border-strong);
+    border-radius: 50%;
+    position: relative;
+    opacity: 0.5;
+}
+
+.cross::before,
+.cross::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 1.5px;
+    background: var(--text-muted);
+    top: 50%;
+    left: 50%;
+}
+
+.cross::before { transform: translate(-50%, -50%) rotate(45deg); }
+.cross::after { transform: translate(-50%, -50%) rotate(-45deg); }
+
+/* Valeurs textuelles */
+.cell-value {
+    color: var(--text);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* Colonne Pro highlight (subtle vertical band) */
+.pricing-table tbody td:nth-child(3) {
+    background: var(--accent-soft);
+}
+
+.pricing-table tbody tr.row-category td:nth-child(3) {
+    background: var(--accent-soft);
+}
+
+/* CTA row */
+.row-cta td {
+    padding-top: 32px;
+    padding-bottom: 16px;
+    border-bottom: none !important;
+    vertical-align: top;
+}
+
+.btn-table {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: white;
+    color: var(--text);
+    border: 1px solid var(--border-strong);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.15s;
+    line-height: 1.2;
+    text-align: center;
+    min-width: 140px;
+}
+
+.btn-table:hover {
+    border-color: var(--text-muted);
+    background: var(--bg-soft);
+}
+
+.btn-table-primary {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+.btn-table-primary:hover {
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
+}
+
+.cta-note {
+    margin-top: 8px;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
+/* Last row before CTA → no border */
+.pricing-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+@media (max-width: 768px) {
+    .pricing-table-wrapper {
+        margin-top: 56px;
+    }
+    .pricing-table-head { margin-bottom: 32px; }
+    .pricing-table th,
+    .pricing-table td {
+        padding: 12px 12px;
+        font-size: 0.85rem;
+    }
+    .th-plan { font-size: 1.2rem; }
+    .th-price { font-size: 0.85rem; }
+    .btn-table { padding: 10px 14px; font-size: 0.85rem; min-width: 110px; }
+}
+
 /* ============ WAITLIST ============ */
 .waitlist {
     padding: 100px 0;
@@ -1180,8 +1457,6 @@ footer {
     .dash-block { padding: 18px; }
     .kpi-card { padding: 18px 16px; }
     .kpi-value { font-size: 1.4rem; }
-    .demo-divider::before,
-    .demo-divider::after { display: none; }
     .roi-arrow { transform: rotate(90deg); }
     .roi-card { padding: 24px; min-width: 0; width: 100%; }
 }
