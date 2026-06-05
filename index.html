@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutilia — La plateforme analytique intelligente pour votre e-commerce</title>
+    <meta name="description" content="Tableau de bord, rapports IA et assistant conversationnel pour e-commerçants français. Pilotez votre boutique avec clarté, sans devenir analyste data.">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+    <div class="container nav-inner">
+        <a href="#" class="logo">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2L17 11L26 14L17 17L14 26L11 17L2 14L11 11L14 2Z" fill="#00B383" stroke="#00B383" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+            <span>Boutilia</span>
+        </a>
+        <div class="nav-actions">
+            <a href="#features" class="nav-link">Fonctionnalités</a>
+            <a href="#pricing" class="nav-link">Tarifs</a>
+            <a href="#waitlist" class="btn btn-small">Rejoindre la beta</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container hero-inner">
+        <div class="badge">
+            <span class="badge-dot"></span>
+            Beta limitée — Ouverture rentrée 2026
+        </div>
+        <h1>Pilotez votre boutique<br>avec <span class="accent">clarté</span>.</h1>
+        <p class="lead">
+            Boutilia est la plateforme analytique conçue pour votre e-commerce.
+            Tableau de bord unifié, alertes en temps réel, assistant IA conversationnel
+            et rapport hebdomadaire automatique — pour piloter sereinement votre activité,
+            sans devenir analyste data.
+        </p>
+        <div class="hero-actions">
+            <a href="#waitlist" class="btn btn-primary">Rejoindre la waitlist</a>
+            <a href="#features" class="btn btn-ghost">Voir les fonctionnalités</a>
+        </div>
+        <div class="hero-trust">
+            <div class="trust-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                <span>Hébergement France · RGPD</span>
+            </div>
+            <div class="trust-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                </svg>
+                <span>Connexions OAuth en lecture seule</span>
+            </div>
+            <div class="trust-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span>50% de remise à vie pour les membres beta</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TRUST BAR / LOGOS PARTENAIRES -->
+<section class="trust-bar">
+    <div class="container">
+        <p class="trust-bar-label">Connecté nativement à vos outils du quotidien</p>
+        <div class="logos-grid">
+            <div class="brand-logo">Shopify</div>
+            <div class="brand-logo">Stripe</div>
+            <div class="brand-logo">Meta Ads</div>
+            <div class="brand-logo">Google Ads</div>
+            <div class="brand-logo">Klaviyo</div>
+            <div class="brand-logo">Claude AI</div>
+        </div>
+    </div>
+</section>
+
+<!-- PROBLÈME -->
+<section class="problem">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Le constat</span>
+            <h2>Vos données existent. Vous n'en tirez pas parti.</h2>
+        </div>
+
+        <div class="problems-grid">
+            <div class="problem-card">
+                <div class="icon-wrap">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                </div>
+                <h3>Vos données sont dispersées</h3>
+                <p>Shopify, Stripe, Meta Ads, Google Ads, Sage, Klaviyo… Chaque outil a son tableau de bord. Aucun croisement automatique.</p>
+            </div>
+
+            <div class="problem-card">
+                <div class="icon-wrap">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                </div>
+                <h3>Le reporting devient une charge hebdomadaire</h3>
+                <p>Vous y consacrez 1 à 2 heures par semaine pour compiler vos chiffres dans Excel — quand vous trouvez le temps.</p>
+            </div>
+
+            <div class="problem-card">
+                <div class="icon-wrap">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="1" x2="12" y2="23"/>
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                    </svg>
+                </div>
+                <h3>Les outils data restent inaccessibles</h3>
+                <p>Un dashboard sur mesure coûte plusieurs milliers d'euros et nécessite un consultant pour évoluer.</p>
+            </div>
+
+            <div class="problem-card">
+                <div class="icon-wrap">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2v20M2 12h20"/>
+                    </svg>
+                </div>
+                <h3>Vos décisions manquent de fondations data</h3>
+                <p>Optimiser une campagne, ajuster un prix, relancer un client — autant d'arbitrages pris sans données croisées.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- COMMENT ÇA MARCHE -->
+<section class="how" id="how">
+    <div class="container">
+        <div class="section-head light">
+            <span class="eyebrow">Comment ça marche</span>
+            <h2>3 étapes. 10 minutes de configuration. Aucune ligne de code.</h2>
+        </div>
+
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">01</div>
+                <h3>Connectez vos outils</h3>
+                <p>Shopify, Stripe, Meta Ads, Google Ads. 1 clic OAuth pour chaque connexion, lecture seule.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">02</div>
+                <h3>Recevez votre rapport chaque lundi</h3>
+                <p>Un rapport synthétique de 30 secondes de lecture : performances de la semaine, variations significatives, actions à tester.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">03</div>
+                <h3>Interrogez vos données</h3>
+                <p>Posez vos questions en langage naturel à l'assistant IA. Obtenez vos réponses chiffrées en quelques secondes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FONCTIONNALITÉS -->
+<section class="features" id="features">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Fonctionnalités</span>
+            <h2>Une suite complète pour piloter votre activité e-commerce.</h2>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7"/>
+                        <rect x="14" y="3" width="7" height="7"/>
+                        <rect x="14" y="14" width="7" height="7"/>
+                        <rect x="3" y="14" width="7" height="7"/>
+                    </svg>
+                </div>
+                <h3>Tableau de bord unifié</h3>
+                <p>Tous vos KPI essentiels au même endroit : CA, marge, panier moyen, ROAS, top produits, top clients. Filtrable par période (7, 30, 90 jours).</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                </div>
+                <h3>Rapport hebdomadaire IA</h3>
+                <p>Chaque lundi, un rapport synthétique : variations significatives, causes identifiées, 2 à 3 recommandations basées sur vos données.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                    </svg>
+                </div>
+                <h3>Alertes intelligentes</h3>
+                <p>Notifications en temps réel sur les événements clés : dégradation du ROAS, inactivité d'un client à forte valeur, pics de performance, anomalies de marge.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                </div>
+                <h3>Analyse clients & cohortes</h3>
+                <p>Segments automatiques (VIP, nouveaux, dormants), LTV, taux de réachat, et liste des clients à relancer cette semaine.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                        <polyline points="17 6 23 6 23 12"/>
+                    </svg>
+                </div>
+                <h3>Prévisions IA</h3>
+                <p>Projections de chiffre d'affaires et de marge fondées sur votre historique et la saisonnalité de votre activité.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                </div>
+                <h3>Rapport mensuel PDF</h3>
+                <p>Export professionnel et personnalisable chaque fin de mois, destiné à votre comptable, vos associés ou vos investisseurs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DÉMO -->
+<section class="demo">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Exemple concret</span>
+            <h2>Vos données. Lisibles. Au bon moment.</h2>
+            <p class="section-sub">Un tableau de bord clair, complété chaque lundi par un rapport automatique.</p>
+        </div>
+
+        <!-- DASHBOARD MOCKUP -->
+        <div class="dashboard-mockup">
+            <div class="dash-header">
+                <div class="dash-title">
+                    <strong>MaisonClaire</strong> · Vue d'ensemble
+                </div>
+                <div class="dash-period">
+                    <button>7 j</button>
+                    <button class="active">30 j</button>
+                    <button>90 j</button>
+                </div>
+            </div>
+            <div class="dash-kpis">
+                <div class="kpi-card">
+                    <div class="kpi-label">Chiffre d'affaires</div>
+                    <div class="kpi-value">42 380 €</div>
+                    <div class="kpi-change positive">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+                        +12,4 % vs période précédente
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Commandes</div>
+                    <div class="kpi-value">364</div>
+                    <div class="kpi-change negative">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        −3,1 %
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Panier moyen</div>
+                    <div class="kpi-value">116,42 €</div>
+                    <div class="kpi-change positive">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+                        +16,1 %
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">ROAS Meta Ads</div>
+                    <div class="kpi-value">2,84 x</div>
+                    <div class="kpi-change negative">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        de 3,21 x
+                    </div>
+                </div>
+            </div>
+            <div class="dash-grid">
+                <div class="dash-block">
+                    <div class="dash-block-title">Top produits</div>
+                    <ul class="dash-list">
+                        <li><span>Sac Voyage Cuir</span> <strong>9 870 €</strong></li>
+                        <li><span>Sac XL Beige</span> <strong>6 320 €</strong></li>
+                        <li><span>Pochette Soirée</span> <strong>4 110 €</strong></li>
+                        <li><span>Ceinture Tressée</span> <strong>2 940 €</strong></li>
+                    </ul>
+                </div>
+                <div class="dash-block">
+                    <div class="dash-block-title">Sources de trafic</div>
+                    <ul class="dash-list">
+                        <li><span>Meta Ads</span> <strong>40 %</strong></li>
+                        <li><span>Organique</span> <strong>24 %</strong></li>
+                        <li><span>Direct</span> <strong>16 %</strong></li>
+                        <li><span>Google Ads</span> <strong>11 %</strong></li>
+                        <li><span>Email · Klaviyo</span> <strong>9 %</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <p class="demo-divider">Chaque lundi à 7 h, vous recevez aussi ce rapport par email :</p>
+
+        <div class="email-mockup">
+            <div class="email-header">
+                <div class="email-from"><strong>Boutilia</strong> &lt;lundi@boutilia.app&gt;</div>
+                <div class="email-subject">Rapport hebdomadaire — Performances de votre boutique</div>
+            </div>
+            <div class="email-body">
+                <p class="email-intro"><strong>Performance contrastée : volume en baisse, panier moyen en progression.</strong></p>
+
+                <p class="email-section-title">Ce qui s'est passé :</p>
+                <ul>
+                    <li>Votre chiffre d'affaires recule de <strong>4,4%</strong> à <strong>10 844€</strong>, tiré par une chute de 14,3% du nombre de commandes (96 vs 112).</li>
+                    <li>Bonne nouvelle : votre panier moyen progresse de <strong>+11,5%</strong> à 112,96€ — vos clients achètent moins souvent mais plus cher.</li>
+                    <li>Le trio Sac Voyage + Sac XL Beige + Pochette Soirée représente <strong>60% du CA</strong>, avec Meta Ads qui génère 40% des ventes.</li>
+                </ul>
+
+                <p class="email-section-title">Mes recommandations :</p>
+                <ul>
+                    <li>Lancez une campagne de réactivation email sur vos clients inactifs — l'email ne génère que 910€, il y a du potentiel.</li>
+                    <li>Profitez du panier moyen élevé pour tester des bundles sur vos best-sellers ("Sac Voyage + Pochette").</li>
+                    <li>Diversifiez votre dépendance à Meta Ads : boostez TikTok Ads (471€ seulement) avec du contenu UGC.</li>
+                </ul>
+            </div>
+        </div>
+        <p class="demo-caption">Exemple généré par Boutilia à partir de données fictives. Pas une simple illustration marketing.</p>
+    </div>
+</section>
+
+<!-- COMPARAISON -->
+<section class="why">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Positionnement</span>
+            <h2>Pourquoi Boutilia, et pas Triple Whale ou Power BI ?</h2>
+        </div>
+
+        <div class="compare-grid">
+            <div class="compare-card highlight">
+                <div class="compare-head">
+                    <h3>Boutilia</h3>
+                    <span class="badge-pro">Recommandé</span>
+                </div>
+                <ul>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Pensé pour les e-commerces français 5K-150K€/mois</li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Récap automatique chaque lundi, zéro effort</li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Assistant IA en français, par chat</li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Tarif accessible — à partir de 49€/mois</li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Support français, hébergement France</li>
+                </ul>
+            </div>
+
+            <div class="compare-card">
+                <div class="compare-head">
+                    <h3>Triple Whale / Polar</h3>
+                </div>
+                <ul>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D04545" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Pensé pour les gros DTC américains</li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D04545" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Tarif : 129 à 499€/mois</li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D04545" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Interface anglaise complexe</li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D04545" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Vous devez construire vos dashboards</li>
+                </ul>
+            </div>
+
+            <div class="compare-card">
+                <div class="compare-head">
+                    <h3>Power BI / Excel</h3>
+                </div>
+                <ul>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D04545" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Nécessite des compétences techniques</li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D04545" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Vous regardez, ils ne vous disent rien</li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D04545" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Aucune automatisation</li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D04545" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Aucune recommandation intelligente</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ROI -->
+<section class="roi">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Cas d'usage concrets</span>
+            <h2>Une seule recommandation appliquée peut rembourser votre abonnement.</h2>
+            <p class="section-sub">Voici quelques situations typiques où Boutilia vous fait gagner — ou éviter de perdre — bien plus que son coût mensuel.</p>
+        </div>
+
+        <div class="roi-examples">
+            <div class="roi-example">
+                <div class="roi-example-title">Un client inactif relancé à temps</div>
+                <p>Boutilia repère qu'un client à forte valeur n'a pas commandé depuis 30 jours. Vous lui envoyez une offre personnalisée. Une commande à 140 € : votre abonnement Pro est déjà remboursé.</p>
+            </div>
+            <div class="roi-example">
+                <div class="roi-example-title">Une campagne pub corrigée avant qu'il soit trop tard</div>
+                <p>Une alerte vous prévient qu'une campagne Meta dégrade son ROAS depuis plusieurs jours. Vous la coupez ou la réajustez avant de cramer votre budget inutilement.</p>
+            </div>
+            <div class="roi-example">
+                <div class="roi-example-title">Un best-seller en rupture anticipée</div>
+                <p>Boutilia détecte que votre produit star va manquer de stock dans les 10 jours. Vous commandez à temps. Vous évitez plusieurs ventes manquées et la frustration de vos clients.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Tarifs</span>
+            <h2>Un retour sur investissement dès la première vente supplémentaire.</h2>
+            <p class="section-sub">50% de remise à vie pour les 20 premiers membres de la beta.</p>
+        </div>
+
+        <div class="pricing-grid pricing-4">
+            <div class="pricing-card">
+                <div class="plan-name">Starter</div>
+                <div class="plan-price"><span class="price">49€</span> <span class="period">HT / mois</span></div>
+                <p class="plan-ttc">soit 58,80€ TTC</p>
+                <p class="plan-target">Petits e-commerces 5-20K€/mois</p>
+                <ul class="plan-features">
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Tableau de bord</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Rapport hebdomadaire IA</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Shopify + Stripe</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>1 utilisateur</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card highlight">
+                <div class="plan-badge">Le plus populaire</div>
+                <div class="plan-name">Pro</div>
+                <div class="plan-price"><span class="price">99€</span> <span class="period">HT / mois</span></div>
+                <p class="plan-ttc">soit 118,80€ TTC</p>
+                <p class="plan-target">E-commerces 20-50K€/mois</p>
+                <ul class="plan-features">
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Tout du Starter, plus :</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Connexion Meta Ads</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Assistant IA conversationnel</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Alertes intelligentes</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>2 utilisateurs</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card">
+                <div class="plan-name">Growth</div>
+                <div class="plan-price"><span class="price">199€</span> <span class="period">HT / mois</span></div>
+                <p class="plan-ttc">soit 238,80€ TTC</p>
+                <p class="plan-target">E-commerces 50-150K€/mois</p>
+                <ul class="plan-features">
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Tout du Pro, plus :</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Google Ads + Klaviyo/Brevo</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Analyse clients & cohortes</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Prévisions IA + détection d'anomalies</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Rapport mensuel PDF</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>5 utilisateurs</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card">
+                <div class="plan-name">Agency</div>
+                <div class="plan-price"><span class="price">299€</span> <span class="period">HT / mois</span></div>
+                <p class="plan-ttc">soit 358,80€ TTC</p>
+                <p class="plan-target">Agences gérant plusieurs boutiques</p>
+                <ul class="plan-features">
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Tout du Growth, plus :</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Jusqu'à 10 boutiques connectées</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Rapports personnalisables au logo de l'agence</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Utilisateurs illimités</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00B383" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Support prioritaire + onboarding dédié</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SÉCURITÉ -->
+<section class="security">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Sécurité & Conformité</span>
+            <h2>Nos engagements en matière de données.</h2>
+            <p class="section-sub">Boutilia accède à vos données en lecture seule et les stocke chiffrées en Europe. Voici les principes que nous nous engageons à respecter dès le lancement de la beta.</p>
+        </div>
+
+        <div class="security-grid">
+            <div class="security-card">
+                <div class="feature-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                    </svg>
+                </div>
+                <h3>Connexions OAuth en lecture seule</h3>
+                <p>Boutilia se connecte à vos outils (Shopify, Stripe, Meta Ads…) via les OAuth officiels. Aucune écriture possible. Vous révoquez l'accès quand vous le souhaitez, en 1 clic.</p>
+            </div>
+
+            <div class="security-card">
+                <div class="feature-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                </div>
+                <h3>Hébergement en Europe</h3>
+                <p>Infrastructure prévue chez un hébergeur européen (OVHcloud ou Scaleway). Vos données ne quittent pas le territoire européen.</p>
+            </div>
+
+            <div class="security-card">
+                <div class="feature-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                </div>
+                <h3>Conformité RGPD</h3>
+                <p>Registre des traitements à jour, DPA disponible sur demande, droit d'accès et d'effacement garantis. Vos données chiffrées en transit (TLS) et au repos.</p>
+            </div>
+
+            <div class="security-card">
+                <div class="feature-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </div>
+                <h3>Vos données ne servent pas à entraîner l'IA</h3>
+                <p>Les modèles utilisés (Anthropic Claude via API) n'utilisent jamais vos données pour leur entraînement. Vos chiffres servent uniquement à générer vos rapports.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WAITLIST -->
+<section class="waitlist" id="waitlist">
+    <div class="container waitlist-inner">
+        <div class="section-head light center">
+            <span class="eyebrow light">Beta limitée</span>
+            <h2>Rejoignez la waitlist Boutilia.</h2>
+            <p class="section-sub light">
+                Ouverture de la beta privée à la rentrée 2026, avec 20 e-commerces sélectionnés.
+                Les premiers membres bénéficient de <strong>50% de remise à vie</strong> sur leur abonnement.
+            </p>
+        </div>
+
+        <div class="form-wrapper">
+            <iframe data-tally-src="https://tally.so/r/NpPWoO"
+                    loading="lazy"
+                    width="100%"
+                    height="340"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                    title="Rejoindre la waitlist Boutilia"></iframe>
+        </div>
+
+        <p class="waitlist-foot">Aucun spam. Désinscription en un clic.</p>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">FAQ</span>
+            <h2>Vos questions, nos réponses.</h2>
+        </div>
+
+        <details>
+            <summary>Boutilia est-il déjà disponible ?</summary>
+            <p>La beta privée ouvre à la rentrée 2026. Les inscrits sur la waitlist seront contactés en priorité pour rejoindre les 20 premiers membres.</p>
+        </details>
+
+        <details>
+            <summary>Quel est le tarif ?</summary>
+            <p>Quatre plans sont proposés : <strong>Starter à 49€</strong>, <strong>Pro à 99€</strong>, <strong>Growth à 199€</strong> et <strong>Agency à 299€</strong> par mois (HT). Les membres de la beta bénéficient de <strong>50% de remise à vie</strong> sur leur abonnement.</p>
+        </details>
+
+        <details>
+            <summary>Mes données sont-elles en sécurité ?</summary>
+            <p>Oui. Vos données restent sur vos plateformes (Shopify, Stripe…), Boutilia y accède en lecture seule via des connexions OAuth officielles. Hébergement français, conformité RGPD.</p>
+        </details>
+
+        <details>
+            <summary>Mes outils ne sont pas Shopify. Suis-je éligible ?</summary>
+            <p>Boutilia intègre dans un premier temps Shopify, Stripe, Meta Ads et Google Ads. WooCommerce, PrestaShop et d'autres connecteurs arriveront en V2. Inscrivez-vous : nous prendrons contact pour évaluer votre cas.</p>
+        </details>
+
+        <details>
+            <summary>Qui est derrière Boutilia ?</summary>
+            <p>Boutilia est conçu par une équipe d'ingénieurs spécialisée en data et IA. Notre mission : permettre aux e-commerçants français de piloter leur boutique sereinement, sans devenir analystes data.</p>
+        </details>
+
+        <details>
+            <summary>Combien de temps pour la mise en place ?</summary>
+            <p>Moins de 10 minutes. Vous connectez vos outils via OAuth (1 clic chacun), Boutilia synchronise vos données historiques sur les 12 derniers mois, et votre tableau de bord est opérationnel.</p>
+        </details>
+
+        <details>
+            <summary>Y a-t-il une période d'essai ?</summary>
+            <p>Oui. Les membres de la beta bénéficient d'un essai gratuit de 14 jours sans engagement. Aucune carte bancaire requise pour démarrer l'essai.</p>
+        </details>
+
+        <details>
+            <summary>Suis-je engagé sur la durée ?</summary>
+            <p>Non. Tous les abonnements sont sans engagement, résiliables à tout moment depuis votre espace. Vous gardez l'accès jusqu'à la fin de la période payée.</p>
+        </details>
+
+        <details>
+            <summary>Et si je veux récupérer mes données ?</summary>
+            <p>Tous vos rapports et historiques sont exportables en CSV et PDF à tout moment. À la résiliation, vos données sont supprimées sous 30 jours conformément au RGPD.</p>
+        </details>
+
+        <details>
+            <summary>Le rapport IA hallucine-t-il ?</summary>
+            <p>Non. Le modèle reçoit uniquement vos chiffres réels, déjà calculés, et est cadré pour ne formuler que des observations factuelles et des recommandations basées sur vos données. Aucune extrapolation libre.</p>
+        </details>
+
+        <details>
+            <summary>Quelle différence avec un freelance Power BI ?</summary>
+            <p>Un freelance Power BI vous facture 2 000 à 5 000 € pour un dashboard statique. Boutilia vous donne un tableau de bord auto-maintenu, des rapports IA hebdomadaires et un assistant conversationnel, pour 49 à 299 € par mois. Et vous n'avez personne à briefer à chaque mise à jour.</p>
+        </details>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-inner">
+        <div class="footer-brand">
+            <a href="#" class="logo">
+                <svg width="22" height="22" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 2L17 11L26 14L17 17L14 26L11 17L2 14L11 11L14 2Z" fill="#00B383" stroke="#00B383" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+                <span>Boutilia</span>
+            </a>
+            <p>La plateforme analytique de votre e-commerce.</p>
+        </div>
+        <div class="footer-meta">
+            <p>© 2026 Boutilia · <a href="mailto:hello@boutilia.fr">hello@boutilia.fr</a></p>
+            <p class="footer-links">
+                <a href="mentions-legales.html">Mentions légales</a> ·
+                <a href="politique-confidentialite.html">Politique de confidentialité</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script async src="https://tally.so/widgets/embed.js"></script>
+
+</body>
+</html>
