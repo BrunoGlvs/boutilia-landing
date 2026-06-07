@@ -114,6 +114,7 @@ nav {
     height: 32px;
     width: auto;
     display: block;
+    mix-blend-mode: multiply;
 }
 
 .logo-img-nav {
