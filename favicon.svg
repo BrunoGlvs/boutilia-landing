@@ -1,4 +1,13 @@
 <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-    <rect width="32" height="32" rx="8" fill="#0A1733"/>
-    <path d="M16 5L19.5 12.5L27 16L19.5 19.5L16 27L12.5 19.5L5 16L12.5 12.5L16 5Z" fill="#00B383" stroke="#00B383" stroke-width="1" stroke-linejoin="round"/>
+    <!-- Fond arrondi -->
+    <rect width="32" height="32" rx="7" fill="#0A1733"/>
+
+    <!-- Le "B" stylisé : 2 bosses arrondies à droite -->
+    <path d="M9 7 L9 25 L19 25 Q24 25 24 21 Q24 18 21 17 Q24 16 24 13 Q24 7 19 7 Z"
+          fill="#FFFFFF"/>
+
+    <!-- Graphique en bâtons vert intégré dans la partie gauche du B -->
+    <rect x="11" y="17.5" width="2" height="4.5" fill="#00B383" rx="0.4"/>
+    <rect x="14" y="14.5" width="2" height="7.5" fill="#00B383" rx="0.4"/>
+    <rect x="17" y="11.5" width="2" height="10.5" fill="#00B383" rx="0.4"/>
 </svg>
